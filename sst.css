@@ -1,0 +1,33 @@
+body{
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+.nav-item:hover{
+            background: #d74d4d;
+            transition: 1.4s;
+          }
+
+          .navbar-brand:hover{
+            background: #cd47e8;
+            text-shadow: 4px 4px #d74d4d;
+          }
+
+          .gallery-item{
+            padding: 50px;
+            background-color: rgb(117, 224, 223);
+            transition: transform 2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+          }
+          
+          .gallery-item:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+          }
+
+          td:hover{
+            background-color: rgb(78, 236, 120);
+        }

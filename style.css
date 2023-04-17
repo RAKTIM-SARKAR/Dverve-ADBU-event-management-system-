@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    color:#079fdb;
+    padding:10px;
+    
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .gallery-item {
+    border: 8px solid rgba(0, 0, 0, 0.685);
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+input[type=file] {
+    margin-bottom: 2px;
+    padding:11px;
+    color:#079fdb;
+    font-size: 20px;
+ 
+}
+
+input[type=submit] {
+    background-color: #361604;
+    color: #079fdb;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+   
+}
+
+input[type=submit]:hover {
+    background-color: #c709525d;
+    
+}

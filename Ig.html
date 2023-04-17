@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-5/ZcxA7Dub2FNG09dHw8CHmPN7Fz6ASlweagj0nuXjmMyupgH9n9F5Hd926zsu3/" crossorigin="anonymous">
+
+    <link rel="icon" href="adbu.jpg">
+    <link rel="stylesheet" href="sst.css">
+    <title>D'VERVE</title>
+    <style>
+        td{
+            padding-left: 10px;
+        }
+    </style>
+
+    <script>
+
+        function validateForm() 
+        {
+  let x = document.forms["myform"]["sname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  else{
+    alert("You have registered successfully. Further updates will be given to you on your whatsapp.");
+  }
+}
+
+    </script>
+</head>
+
+<body background="sports.jpg" style=" background-size: cover;">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <img src="adbu.jpg" alt="reload" width="40px">
+              <a class="navbar-brand" href="https://web.dbuniversity.ac.in/dverve-2015-go-glow-grow/" target="_blank">D'VERVE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="org.html">Organisers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="gallery.html">Gallary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dev.html">Developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Event.html">Event</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+
+
+    <div class="container">
+        <h1 align=center> INDOOR SPORTS</h1>
+        <fieldset>
+            <legend>
+                <font color="maroon"><b> Register Yourself Here</b></font>
+            </legend>
+            <form name="myform" action="Event.html" onsubmit="return validateForm()">
+                <table align="center" border=4>
+
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><input type="text" id="name" name="sname"
+                                placeholder="Your Name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="ID">ID</label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><input type="text" id="Sid"
+                                name="ID" placeholder="Your roll number" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Department">Department</label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><input type="text" id="dept" name="Department" placeholder="Your Department" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="semester">Semester</label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><input type="text" id="sem" name="semester"
+                                placeholder="which semester are you?" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone</label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><input type="tel" id="num" name="number"
+                                placeholder="Your contact number" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="assto">Event </label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><select name="Event" id="assto" required>
+                                <option value="none" type="default">None</option>
+                                <option value="Badminton">Badminton</option>
+                                <option value="Carrom">Carrom</option>
+                                <option value="Chess">Chess</option>
+                                <option value="arm wrestling">arm wrestling</option>
+                            </select></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td> <label for="discp">Suggestions and Request</label></td>
+                        <td style="padding-top: 2%; padding-bottom: 2%;"><textarea placeholder="For the betterment of our event" name="description" id="discp"
+                                cols="50" rows="7"></textarea></td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding-top: 2%; padding-bottom: 2%;" align="right"><input type="submit" value="Submit">
+                      </td>
+                      <td align="left"><input type="reset" value="Reset"></td>
+                  </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
